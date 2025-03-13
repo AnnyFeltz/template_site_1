@@ -33,3 +33,29 @@ body {
     padding: 20px;
     flex: 1;
 }
+
+#menu {
+    display: none;
+    width: auto;
+    list-style: none;
+    padding: 5px;
+}
+
+#menu li {
+    display: flex;
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    justify-content: center;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#burguer {
+    display: block;
+    padding: 15px;
+    color: black;
+}

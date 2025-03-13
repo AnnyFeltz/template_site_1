@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
+     
     <div class="menu-lateral">
-        menu
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+
+        <ul id="menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="pagina1.html">Página 1</a>
+            </li>
+            <li>
+                <a href="pagina2.html">Página 2</a>
+            </li>
+            <li>
+                <a href="pagina3.html">Página 3</a>
+            </li>
+        </ul>
     </div>
+
+    
 
     <div class="main-content">
         <div class="cabecalho">
@@ -19,5 +38,24 @@
             blablabla
         </div>
     </div>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 767) {
+                menu.style.display = 'flex'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
