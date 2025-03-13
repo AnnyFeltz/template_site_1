@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-lateral {
+    background-color: rgb(206, 232, 255);
+    padding: 10px;
+}
+
+.cabecalho {
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteudo {
+    padding: 20px;
+    flex: 1;
+}
